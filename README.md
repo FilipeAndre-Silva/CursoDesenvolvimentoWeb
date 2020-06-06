@@ -7,3 +7,5 @@ Repositório criado com o objetivo de:
   www.udemy.com/course/fundamentos-da-web-que-todo-dev-precisa-saber/
   
 -Praticar o workflow do git e github.
+
+-Servir de fonte para futuras consultas.

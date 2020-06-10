@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Aula 26 - HTML5</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Filipe André da Silva">
+        <meta name="keywords" content="HTML5, Elementos Multímidia, Curso de Desenvolvimento Web">
+        <meta name="description" content="Aula 26 Elementos Multímidia do HTML5">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        
+        <figure>
+            <img src="imagem.jpg" alt="Minha Figura">	
+            <figcaption>Informações da Figura</figcaption>
+        </figure>
+
+        <mapa name="primary">
+            <area shape="circle" coords="200,250,25" href="another.htm" /> 
+            <area shape="default" nohref />
+        </map>
+
+        <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay>
+            O seu navegador não suporta o elemento <code>audio</code>.
+        </audio>
+
+        <audio src="foo.ogg">
+            <track kind="captions" src="foo.en.vtt" srclang="en" label="English">
+            <track kind="captions" src="foo.sv.vtt" srclang="sv" label="Svenska">
+        </audio>
+
+        <video src="arquivovideo.ogg" autoplay poster="imagemprevia.jpg">
+            Desculpa, o seu navegador não suporta vídeos incorporados, 
+            mas você pode <a href="videofile.ogg">baixá-lo</a>
+            e assistir pelo seu reprodutor de mídia favorito!
+        </video>
+
+        <video src="foo.ogg">
+            <track kind="subtitles" src="foo.en.vtt" srclang="en" label="English">
+            <track kind="subtitles" src="foo.sv.vtt" srclang="sv" label="Svenska">
+        </video>
+
+    </body>
+
+</html>

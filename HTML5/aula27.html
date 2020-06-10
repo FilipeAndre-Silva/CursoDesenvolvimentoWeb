@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Aula 27 - HTML5</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Filipe André da Silva">
+        <meta name="keywords" content="HTML5, Contéudo Integrado e Scripting, Curso de Desenvolvimento Web">
+        <meta name="description" content="Aula 27 sobre Contéudo Integrado e Scripting do HTML5">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <noscript>
+            <!-- referência a arquivo externo -->
+            <a href="http://www.mozilla.com/">Link Externo</a>
+        </noscript>
+
+    </head>
+
+    <body>
+
+        <embed>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yiMtAmH0_vU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </embed>
+
+        <embed type="video/quicktime" src="movie.mov" width="640" height="480">
+
+        <video controls>
+            <source src="foo.ogg" type="video/ogg"> <!-- Escolhido pelo Firefox -->
+            <source src="foo.mov" type="video/quicktime"> <!-- Escolhido pelo Safari -->
+            Desculpa; seu navegador não é compatível com vídeo em HTML5.
+        </video>
+
+        <canvas id="canvas" width="300" height="300">
+            Desculpe-me, seu navegador não suporta o elemento &lt;canvas&gt;.
+        </canvas>
+
+    </body>
+
+</html>

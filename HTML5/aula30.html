@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Aula 30 - HTML5</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Filipe André da Silva">
+        <meta name="keywords" content="HTML5, Form Inputs e Eventos, Curso de Desenvolvimento Web">
+        <meta name="description" content="Aula 30 sobre Form Inputs e Eventos do HTML5">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+    
+        <form method="POST" action="#">
+            <input list="browsers" />
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <form action="#" method="POST">
+            <fieldset>
+              <legend>Title</legend>
+              <input type="radio" id="radio"> <label for="radio">Click me</label>
+            </fieldset>
+        </form>
+
+        <form action="#" method="POST">
+
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <input type="text" id="nome" placeholder="Digite seu nome completo...">
+
+            <select name="select">
+                <option value="valor1">Valor 1</option> 
+                <option value="valor2" selected>Valor 2</option>
+                <option value="valor3">Valor 3</option>
+            </select>
+
+            <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                0<input type="range" name="b" value="50" />100 +<input type="number" name="a" value="10" /> =
+                <output name="result"></output>
+                </form>
+
+            </fieldset>
+        </form>
+          
+        <progress value="70" max="100">70 %</progress>
+        <br>
+        <h1 onmouseover="alert('Mouse Over')">Passe aqui</h1>
+        <br>
+
+        <input type="checkbox" name="selecao">
+        <input type="checkbox" name="selecao">
+        <input type="checkbox" name="selecao">
+        <button type="submit">Enviar</button>
+
+        <input type="radio" name="selecao">
+        <input type="radio" name="selecao">
+        <input type="radio" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="color" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="datetime" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="date" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="file" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="month" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="password" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="range" name="selecao">
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="email" name="selecao" required>
+        <button type="submit">Enviar</button>
+
+        <input type="reset">
+    </body>
+
+</html>

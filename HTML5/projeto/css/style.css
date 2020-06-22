@@ -1,0 +1,21 @@
+header{
+    float:left;
+    width: 100%;
+    background-color:wheat;
+}
+
+header p{
+    float:right;
+}
+
+a{
+    color:royalblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: salmon;
+    background: seagreen;
+    padding: 20px 5px;
+}

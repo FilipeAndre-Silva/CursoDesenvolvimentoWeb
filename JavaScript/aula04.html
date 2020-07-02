@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<p id="mensagem"></p>
+<script>
+    document.getElementById("mensagem").innerHTML = "Mensagem escrita com innerHTML";
+</script>
+
+<hr>
+
+<h2>Conta feita com o documento.write</h2>
+<h3>O método document.write () deve ser usado apenas para teste.</h3>
+<h3>25 + 25 =</h3>
+<script>
+    document.write(25 + 25);    
+</script>
+
+<hr>
+
+<h2>Conta feita com o window.alert()</h2>
+<h3>5 + 5</h3>
+<script>
+    window.alert(5 + 5);
+</script>
+
+<hr>
+
+<h2>Mensagem enviada apra o console com o console.log</h2>
+<h3>olhe o console do navegador para ver a resposta de 10 + 10</h3>
+<script>
+    console.log(10 + 10)
+</script>
+
+<hr>
+
+<h2>Usando o window.print() para imprimir a pagina</h2>
+<button type="button" onclick="window.print()">Clique aqui para imprimir a pagina</button>
+
+</body>
+</html>

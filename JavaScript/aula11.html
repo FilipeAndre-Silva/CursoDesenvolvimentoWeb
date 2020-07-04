@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        //Comprimento de uma String
+        var txt = "Filipe André da Silva";
+        var comprimento = txt.length;
+        document.write(comprimento);
+
+        //Uma String também pode ser um objeto(Não é uma boa pratica)
+        var x = "John";
+        var y = new String("John");
+
+        //Retornar a posição a palavra começa
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate");
+        document.write(pos);
+
+        //Retornar a ultima posição a palavra
+        var str1 = "Please locate where 'locate' occurs!";
+        var pos1 = str1.lastIndexOf("locate");
+        document.write(pos1);
+
+        //começando da posição 15
+        var str2 = "Please locate where 'locate' occurs!";
+        var pos2 = str2.lastIndexOf("locate", 15);
+        document.write(pos2);
+
+        //procurando por uma String
+        var str3 = "Please locate where 'locate' occurs!";
+        var pos3 = str3.search("locate");
+        document.write(pos3);
+
+        //captura a palavra Banana
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7, 13);
+
+        //substituindo String
+        str = "Please visit Microsoft!";
+        var n = str.replace("Microsoft", "W3Schools");
+
+        //substituir sem diferenciar de maiusculas e menusculas
+        str = "Please visit Microsoft!";
+        var n = str.replace(/MICROSOFT/i, "W3Schools");
+
+        //converter para maiusculas
+        var text1 = "Hello World!";       
+        var text2 = text1.toUpperCase();
+
+        //converter para minusculas
+        var text1 = "Hello World!";       
+        var text2 = text1.toLowerCase();
+        
+        //concatenando strings
+        var text1 = "Hello";
+        var text2 = "World";
+        var text3 = text1.concat(" ", text2);
+        
+        //remover espaços em branco dos 2 lados
+        var str = "       Hello World!        ";
+        alert(str.trim()); 
+
+        //Extraindo o 1 caractere
+        var str = "HELLO WORLD";
+        str.charAt(0);
+
+        //Manipulando posições
+        var str = "HELLO WORLD";
+        str[0] = "A";             
+        str[0];   
+    </script>
+
+</body>
+</html>

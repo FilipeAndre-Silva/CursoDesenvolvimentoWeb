@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Criando objeto
+        var carro = {
+            marca:"Fiat",
+            modelo:"500",
+            cor:"white",
+            //Método do Objeto Carro
+            nome : function(){
+                return this.marca + " Brabo";
+            },
+
+            ligar : function(){
+                return "carro ligado";
+            },
+
+        };
+        
+        //Acessando propiedades
+        carro.marca;
+        carro["marca"];
+
+        //Acessando métodos
+        carro.ligar();
+        carro.nome();
+
+        //Declarando uma variável criada como um Objeto
+        var x = new String();
+    </script>
+</body>
+</html>

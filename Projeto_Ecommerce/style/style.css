@@ -1,0 +1,146 @@
+.corpo_header{
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.header_1{
+    background-color:#0a0a0a;
+    height: 34px;
+    color: white;
+}
+
+.header_2{
+    background-color:#ffffff;
+    height: 100px;
+}
+
+.header_3{
+    background-color:#0a0a0a;
+    height: 42px;
+    color: white;
+}
+
+a:hover{
+    color:#999999; 
+}
+
+.campo_icones{
+    font-size: 20px;
+    text-decoration:none;
+    color: white;
+    display:inline-flex;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.link_icones{
+    text-decoration:none;
+    color: white;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.link_header1{
+    font-size: 12px;
+    text-decoration:none;
+    color: white;
+    display:inline-block;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.link_header2{
+    font-size: 15px;
+    text-decoration:none;
+    color: black;
+    display:inline-block;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.input_buscar{
+    width: 550px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.menu_header{
+    font-size: 14px;
+    width: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.link_menu{
+    color: white;
+    font-weight: bold;
+}
+
+.logo_head{
+    margin: 0;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+  /* Sub Menu Fechado */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links do sub menu */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* cur de fundo sub menu */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* ao tirar o mouse retirar o submenu */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* cor de dentro do menu */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+
+
+
+

@@ -14,6 +14,11 @@
         document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras.<br>`);
         document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br>`);
         document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`);
+    
+        //Formatar salario para real do Brasil
+        var salario = 1543.5;
+        
+        document.write(salario.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}));
     </script>
 
 </body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado 1</p>
+    <p>Aqui vai o <strong>resultado 2</strong></p>
+    <div id="msg">Clique em mim</div>
+    <div name="msg2">Clique em mimaa</div>
+
+    <script>
+
+        var resultado1 = window.document.getElementsByTagName("p")[0];
+        var resultado1 = window.document.getElementsByTagName("p")[1];
+        window.document.write("Resultado 1 tem :" + resultado1.innerText);
+        window.document.write("Resultado 1 tem :" + resultado1.innerHTML);
+        
+        var mensagem = window.document.getElementById("msg");
+        mensagem.style.background = "red";
+        
+        var mensagem2 = window.document.getElementsByName("msg2");
+        mensagem2.innerText = "Olá";
+
+    
+    </script>
+
+</body>
+
+</html>

@@ -6,4 +6,4 @@ try:
 except:
   print("Valor não definido")
 
-#Esta declaração gerará um erro, porque xnão está definido:
+#Esta declaração gerará um erro, porque x não está definido:

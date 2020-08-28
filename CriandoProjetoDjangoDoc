@@ -1,3 +1,5 @@
+#Requesitos: Python instalado e conexão com internet
+
 Criando diretorio do projeto
 	mkdir myproject
 	cd myproject
@@ -8,36 +10,43 @@ Criando a venv oculta
 Ativando a venv
 	. .venv/bin/activate
 	
+Atualizando o pip
+	pip install --upgrade pip
+	
 Instalando o Django dentro do diretorio myproject
-	python3 -m pip install Django
+	python -m pip install Django
 	
 Criando um projeto Django no diretorio myproject
 	django-admin startproject mysite .
 	configurções basicas no settings.py
+		LANGUAGE_CODE = 'pt-br'
+		TIME_ZONE = 'America/Sao_Paulo'
+	criar diretorios apps, static e templates(opcional)
+		apps = onde vai ficar todos APPs do projeto
+		static = onde vai ficar todos os arquivos estáticos e estilo do projeto(css,js,imgs etc)
+		templates =  onde vai todos os aquivos de exibição do projeto(HTMLs)
+	python manage.py migrate
 	
 Iniciando servidor local do django
 	python manage.py runserver
 
-Criando nova app
-	mkdir apps 
-	cd apps
+Criando nova app 
 	python manage.py startapp polls
+	Mover polls para dentro de apps(opcional)
 	"Cria o model do app"
 	adciona no INSTALLED_APPS
+	criar arquivo urls.py e forms.py(Situacional)
 	python manage.py makemigrations polls
 	python manage.py migrate polls
 
+Criando superuser para acessar o site admin
+	python manage.py createsuperuser
+	
 Adcionando a app no site admin(polls/admin.py)
 	from .models import Question
 	admin.site.register(Question)
 
-Criando superuser para acessar o site admin
-	python manage.py createsuperuser
-	python manage.py runserver
-	Acessar = http://127.0.0.1:8000/admin
-
-
 	
-##########################################################################
+#############################################################
 
 
